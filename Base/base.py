@@ -6,7 +6,7 @@ class Base:
 
     @pytest.fixture(autouse=True)
     def set_up(self):
-        print("Initiating Chrome driver")
+        print("Initiating Chrome driver done")
         self.driver = webdriver.Chrome("../Driver/chromedriver.exe")
         print("-----------------------------------------")
         print("Test is started")
